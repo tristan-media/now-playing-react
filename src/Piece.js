@@ -17,12 +17,11 @@ class Piece extends Component {
     const request = new XMLHttpRequest();
     request.open('GET', ApiHost + "api/" + this.props.source, true);
     request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-    const that = this    
     //this callback gets called when the server responds to the ajax call            
-    request.onreadystatechange = function(){
+    request.onreadystatechange = () => {
       if (request.readyState === 4 && request.status === 200) {
         const returnedJson = JSON.parse(request.responseText);
-        that.setState({
+        this.setState({
           title: returnedJson.title,
           composer: returnedJson.composer
         });
