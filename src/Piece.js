@@ -12,7 +12,7 @@ class Piece extends Component {
     setInterval(this.loadData, 60 * 1000);
   }
 
-  loadData() {
+  loadData = () => {
     const ApiHost = "https://now-playing-api.herokuapp.com/"
     const request = new XMLHttpRequest();
     request.open('GET', ApiHost + "api/" + this.props.source, true);
