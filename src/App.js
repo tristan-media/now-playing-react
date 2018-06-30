@@ -9,7 +9,6 @@ class App extends Component {
         <h1>Now Playing</h1>
         <Piece source="counterstream" name="Counterstream Radio" url="http://counterstreamradio.net/" />
         <Piece source="dronezone" name="Dronze Zone" url="http://somafm.com/dronezone/" />
-        <Piece source="earwaves" name="Earwaves" url="http://somafm.com/earwaves/" />
         <Piece source="q2" name="New Sounds" url="https://www.newsounds.org/" />
         <Piece source="yle" name="Yle Klassinen" url="http://yle.fi/radio/yleklassinen/suora/" />
       </div>
