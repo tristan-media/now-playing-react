@@ -13,7 +13,7 @@ class Piece extends Component {
   }
 
   loadData = () => {
-    const ApiHost = "https://now-playing-api.herokuapp.com/"
+    const ApiHost = "https://now-playing-api-ex.herokuapp.com/"
     const request = new XMLHttpRequest();
     request.open('GET', ApiHost + "api/" + this.props.source, true);
     request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
